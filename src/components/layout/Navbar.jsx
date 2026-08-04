@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Logo from '../ui/Logo';
@@ -23,6 +24,7 @@ export default function Navbar() {
     location.pathname === '/' && location.hash === to.slice(to.indexOf('#'));
 
   return (
+    <>
     <header className="sticky top-0 z-50 border-b border-primary/10 bg-white/80 backdrop-blur-lg">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Logo />
@@ -72,14 +74,17 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 z-[100] md:hidden">
+    </header>
+      {mobileMenuOpen &&
+        createPortal(
+          (
+        <div className="fixed inset-0 z-[200] md:hidden">
           <div
             className="absolute inset-0 bg-black/30 backdrop-blur-sm"
             onClick={() => setMobileMenuOpen(false)}
             aria-hidden="true"
           />
-          <div className="absolute inset-y-0 right-0 z-[100] flex w-64 flex-col border-l border-primary/10 bg-white p-6 shadow-2xl">
+          <div className="absolute inset-y-0 right-0 z-[201] flex w-64 flex-col border-l border-primary/10 p-6 bg-white shadow-2xl" style={{ backgroundColor: '#ffffff' }}>
             <button
               className="mb-6 self-end p-2 text-ink-soft hover:text-ink"
               onClick={() => setMobileMenuOpen(false)}
@@ -129,7 +134,9 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      )}
-    </header>
+          ),
+          document.body
+        )}
+    </>
   );
 }

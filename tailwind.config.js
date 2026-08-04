@@ -29,7 +29,7 @@ export default {
       },
       fontFamily: {
         display: ['Playfair Display', 'Georgia', 'serif'],
-        sans: ['Manrope', 'system-ui', 'sans-serif'],
+        sans: ['Source Serif 4', 'Georgia', 'serif'],
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       boxShadow: {
