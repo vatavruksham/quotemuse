@@ -1,0 +1,16 @@
+{
+  "name": "QuoteMuse — AI Quote Generator",
+  "short_name": "QuoteMuse",
+  "description": "Create inspirational quotes with AI and turn them into branded quote cards for social media.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f7fb",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

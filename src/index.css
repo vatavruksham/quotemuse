@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-50 text-ink font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-ink;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .btn-glow {
+    position: relative;
+    box-shadow: 0 6px 24px rgba(79, 70, 229, 0.3);
+  }
+  .btn-glow:hover {
+    box-shadow: 0 8px 32px rgba(79, 70, 229, 0.45);
+  }
+
+  .glass {
+    @apply border border-primary/10 bg-white/70 backdrop-blur-lg;
+    box-shadow: 0 8px 32px rgba(79, 70, 229, 0.06);
+  }
+
+  .glass-card {
+    @apply border border-primary/10 bg-white/80 backdrop-blur-md rounded-2xl;
+    box-shadow: 0 4px 24px rgba(79, 70, 229, 0.06);
+  }
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
