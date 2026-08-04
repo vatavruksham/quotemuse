@@ -15,19 +15,9 @@ export default function Logo({ className = '', showText = true }) {
         className="shrink-0"
         aria-hidden="true"
       >
-        <rect x="6" y="6" width="52" height="52" rx="16" fill={`url(#${gradientId})`} fillOpacity="0.12" />
-        <path
-          d="M20 24c-4 0-7 3.2-7 7.4 0 4 2.8 7 6.4 7 .6 0 1.1-.1 1.6-.2-.7 3-2.9 5.3-6 6.3l1.6 3.3c5.6-1.7 9.4-6.4 9.4-13V31c0-4-2.7-7-6-7z"
-          fill={`url(#${gradientId})`}
-        />
-        <path
-          d="M40 24c-4 0-7 3.2-7 7.4 0 4 2.8 7 6.4 7 .6 0 1.1-.1 1.6-.2-.7 3-2.9 5.3-6 6.3l1.6 3.3c5.6-1.7 9.4-6.4 9.4-13V31c0-4-2.7-7-6-7z"
-          fill={`url(#${gradientId})`}
-        />
-        <path
-          d="M50 10 L51.5 6 L53 10 L57 11.5 L53 13 L51.5 17 L50 13 L46 11.5 Z"
-          fill="#d97706"
-        />
+        <rect x="8" y="8" width="48" height="48" rx="14" fill={`url(#${gradientId})`}/>
+        <path d="M22 38V28.5c0-5.2 3.4-8.5 8-8.5v5.2c-2.2 0-3.6 1.5-3.6 3.8V30H32v8H22zm14 0V28.5c0-5.2 3.4-8.5 8-8.5v5.2c-2.2 0-3.6 1.5-3.6 3.8V30H46v8H36z" fill="#fff"/>
+
         <defs>
           <linearGradient
             id={gradientId}
@@ -44,7 +34,7 @@ export default function Logo({ className = '', showText = true }) {
       </svg>
 
       {showText && (
-        <span className="text-xl font-display font-bold gradient-text tracking-tight">
+        <span className="text-xl font-display font-semibold tracking-tight text-ink">
           QuoteMuse
         </span>
       )}
