@@ -46,6 +46,18 @@ export default function About() {
           </div>
         </AnimateOnScroll>
 
+
+        <AnimateOnScroll delay={150}>
+          <div className="max-w-3xl mx-auto mb-20">
+            <div className="glass-card rounded-2xl p-8 lg:p-10">
+              <h3 className="text-xl font-bold font-display text-ink mb-4">Our AI</h3>
+              <p className="text-ink-soft leading-relaxed">
+                QuoteMuse pairs generative language models with layout-aware card rendering. Copy generation and visual composition use accelerated inference so marketers get on-brand quote creatives from a product tool — not a creative agency engagement.
+              </p>
+            </div>
+          </div>
+        </AnimateOnScroll>
+
         <AnimateOnScroll>
           <SectionHeading
             eyebrow="Our Team"
