@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 
-const DEFAULT_TITLE = 'QuoteMuse — AI Quote Generator';
+const DEFAULT_TITLE = 'QuoteMuse - AI Quote Generator';
 
 export default function useDocumentTitle(title, description) {
   useEffect(() => {
     const previousTitle = document.title;
 
-    document.title = title ? `${title} | QuoteMuse` : DEFAULT_TITLE;
+    document.title = title ? `${title} - QuoteMuse` : DEFAULT_TITLE;
 
     let metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription

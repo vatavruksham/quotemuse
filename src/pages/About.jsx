@@ -4,8 +4,7 @@ import AnimateOnScroll from '../components/ui/AnimateOnScroll';
 import SectionHeading from '../components/ui/SectionHeading';
 
 export default function About() {
-  useDocumentTitle(
-    'About',
+  useDocumentTitle('About',
     "Learn about QuoteMuse's mission to help creators and brands write inspirational quotes with AI."
   );
 

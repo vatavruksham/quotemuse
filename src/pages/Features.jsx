@@ -6,8 +6,7 @@ import Button from '../components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 
 export default function Features() {
-  useDocumentTitle(
-    'Features',
+  useDocumentTitle('Features',
     'Explore QuoteMuse AI quote features — writing, brand voice, card templates, hashtags, batch packs, and export.'
   );
 
