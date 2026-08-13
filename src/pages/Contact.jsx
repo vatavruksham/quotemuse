@@ -83,10 +83,10 @@ export default function Contact() {
               <span className="text-sm text-ink-soft">
                 Or email us directly at{' '}
                 <a
-                  href="mailto:support@quotemuse.ai"
+                  href="mailto:support@quotemuse.art"
                   className="text-primary font-medium hover:underline"
                 >
-                  support@quotemuse.ai
+                  support@quotemuse.art
                 </a>
               </span>
             </div>

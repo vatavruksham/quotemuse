@@ -83,7 +83,7 @@ export default function Terms() {
             <section>
               <h3 className="text-lg font-bold font-display text-ink mb-3">8. Contact</h3>
               <p className="text-ink-soft leading-relaxed">
-                For questions about these terms, contact us at support@quotemuse.ai.
+                For questions about these terms, contact us at support@quotemuse.art.
               </p>
             </section>
           </div>

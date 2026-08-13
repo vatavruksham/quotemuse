@@ -43,10 +43,10 @@ export default function Footer() {
             </p>
             <p className="text-sm text-ink-soft">
               <a
-                href="mailto:support@quotemuse.ai"
+                href="mailto:support@quotemuse.art"
                 className="transition-colors duration-300 hover:text-primary"
               >
-                support@quotemuse.ai
+                support@quotemuse.art
               </a>
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-primary/10 pt-8 text-center">
           <p className="text-sm text-ink-muted">
-            QuoteMuse @ 2026 | All rights reserved.
+            © 2026 QuoteMuse. All rights reserved.
           </p>
         </div>
       </div>

@@ -51,7 +51,7 @@ export default function Privacy() {
               <p className="text-ink-soft leading-relaxed">
                 You have the right to access, correct, or delete your personal data at any time.
                 You may also request a copy of all data we hold about you. Contact us at
-                support@quotemuse.ai to exercise these rights.
+                support@quotemuse.art to exercise these rights.
               </p>
             </section>
 
@@ -67,7 +67,7 @@ export default function Privacy() {
             <section>
               <h3 className="text-lg font-bold font-display text-ink mb-3">6. Contact</h3>
               <p className="text-ink-soft leading-relaxed">
-                For privacy-related questions, contact us at support@quotemuse.ai.
+                For privacy-related questions, contact us at support@quotemuse.art.
               </p>
             </section>
           </div>
