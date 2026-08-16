@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-primary/10 pt-8 text-center">
           <p className="text-sm text-ink-muted">
-            © 2026 QuoteMuse. All rights reserved.
+            Copyright © QuoteMuse 2026 All Rights Reserved.
           </p>
         </div>
       </div>
